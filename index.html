@@ -2,38 +2,91 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>HUT RI - Beranda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Struktur Organisasi Kelas</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
-        header { background-color: #ce1126; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #a00c1c; text-align: center; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 18px; }
-        .container { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; border-top: 5px solid #ce1126; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1, h2 { color: #ce1126; }
-        footer { text-align: center; padding: 15px; background: #333; color: white; margin-top: 40px; }
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f6f9; line-height: 1.6; }
+        header { background: #007bff; color: white; padding: 15px; text-align: center; border-radius: 8px; }
+        nav { margin: 15px 0; text-align: center; }
+        nav a { margin: 0 10px; text-decoration: none; color: #007bff; font-weight: bold; padding: 5px 10px; border: 1px solid #007bff; border-radius: 4px; }
+        nav a.active { background: #007bff; color: white; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h2 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
+        .table-custom { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .table-custom th, .table-custom td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .table-custom th { background-color: #007bff; color: white; }
+        .foto-kelas { text-align: center; margin: 20px 0; }
+        .foto-kelas img { max-width: 100%; height: 300px; object-fit: cover; border-radius: 8px; border: 3px solid #007bff; }
+        .absen-list { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
     </style>
 </head>
 <body>
     <header>
-        <h1>🇮🇩 DIRGAHAYU REPUBLIK INDONESIA 🇮🇩</h1>
-        <p>Peringatan Hari Kemerdekaan 17 Agustus - Web Server Apache CentOS</p>
+        <h1>Website Resmi Kelas XI TKJ</h1>
     </header>
+    
     <nav>
-        <a href="index.html">Beranda</a>
-        <a href="lomba.html">Jadwal Lomba</a>
-        <a href="panitia.html">Panitia & Profil</a>
+        <a href="index.html" class="active">Page 1: Profil & Struktur</a>
+        <a href="piket.html">Page 2: Jadwal Piket</a>
     </nav>
+
     <div class="container">
-        <h2>Selamat Datang di Portal Kemerdekaan</h2>
-        <p>Mari kita meriahkan Peringatan Hari Kemerdekaan Republik Indonesia tanggal 17 Agustus dengan semangat kebersamaan dan persatuan!</p>
-        <hr>
-        <h3>Pengelola Web Server:</h3>
-        <p><strong>Nama:</strong> Aditya Kurniawan Arifin</p>
-        <p><strong>Kelas:</strong> XI TKJ</p>
-        <p><strong>Server:</strong> Apache HTTP Server / CentOS Stream 10</p>
+        <h2>Foto Bersama Kelas</h2>
+        <div class="foto-kelas">
+            <img src="https://via.placeholder.com/800x400?text=Foto+Bersama+Kelas+XI+TKJ" alt="Foto Kelas">
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2026 Panitia HUT RI - XI TKJ | Apache Web Server</p>
-    </footer>
+
+    <div class="container">
+        <h2>Struktur Organisasi Kelas</h2>
+        <table class="table-custom">
+            <tr><th>Jabatan</th><th>Nama Lengkap</th></tr>
+            <tr><td>Wali Kelas</td><td>Muhammad Fajrul Falah</td></tr>
+            <tr><td>Ketua Kelas</td><td>Raya Hayundha Luhung</td></tr>
+            <tr><td>Wakil Ketua</td><td>Novero Wahyu Dhasilva</td></tr>
+            <tr><td>Sekretaris 1</td><td>Tehora Renawia</td></tr>
+            <tr><td>Bendahara 1</td><td>Muhammad Habibie Setyawan</td></tr>
+            <tr><td>Bendahara 2</td><td>Nindy Syara Herfanni</td></tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Daftar Absen Siswa (1 - 33)</h2>
+        <ol class="absen-list">
+            <li>Aditya Kurniawan Arifin</li>
+            <li>Alfian Rizqie Suryahadinata</li>
+            <li>Aliring Hayyu Wening</li>
+            <li>Almira Talita Zalfa</li>
+            <li>Althafia Jihan Navisa</li>
+            <li>Ananda Rifqi Aditya</li>
+            <li>Argya Tri Ramadani</li>
+            <li>Aurora Yuli Kawati Agustian</li>
+            <li>Bima Nawa Ananda Dafinza</li>
+            <li>Brelian Afisionando</li>
+            <li>Danadyaksa Kayana Syahputra</li>
+            <li>Digit Giantino Rafif</li>
+            <li>Gadis Tatya Ramadhani</li>
+            <li>Hafith Fairuz Marsha Virille</li>
+            <li>Muhammad Adikara Maulana</li>
+            <li>Muhammad Habibie Setyawan</li>
+            <li>Muhammad Hilmi Ardiansyah</li>
+            <li>Muhammad Iqbal Bajideh</li>
+            <li>Muhammad Mirza Firmanda</li>
+            <li>Muhammad Nur Affan Rezky</li>
+            <li>Naila Urwatul Lutfi'ah</li>
+            <li>Nindy Syara Herfanni</li>
+            <li>Nobel Muhammad Kaisar Al Fikri</li>
+            <li>Novero Wahyu Dhasilva</li>
+            <li>Pandu Pranata Putra</li>
+            <li>Pramudya Sekar Arafah</li>
+            <li>Qiarra Noe Mahyyasah Andrian</li>
+            <li>Raffi Javas Nararya</li>
+            <li>Raya Hayundha Luhung</li>
+            <li>Reyvano Diffa Ramadhan</li>
+            <li>Shofiyulloh Azzam</li>
+            <li>Talitha Ardelia</li>
+            <li>Tehora Renawia</li>
+        </ol>
+    </div>
 </body>
 </html>
